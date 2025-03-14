@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/reset.css);
+
+:root {
+    font-size: 16px;
+    --font-main-title: 'Luckiest Guy', sans-serif;
+    --font-secondary-title: 'Open Sans', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+    --font-weight-extra-bold: 800;
+    --font-weight-regular: 400;
+
+    --font-size-2xl: 3.5rem;
+    --font-size-xl: 2.5rem;
+    --font-size-l: 2rem;
+    --font-size-m: 1.5rem;
+    --font-size-b: 1rem;
+
+    --gap-2xl: 3.5rem;
+    --gap-xl: 2.5rem;
+    --gap-l: 2rem;
+    --gap-m: 1.5rem;
+    --gap-b: 1rem;
+
+    --padding-2xl: 3.5rem;
+    --padding-xl: 2.5rem;
+    --padding-l: 2rem;
+    --padding-m: 1.5rem;
+    --padding-b: 1rem;
+
+    --margin-2xl: 3.5rem;
+    --margin-xl: 2.5rem;
+    --margin-l: 2rem;
+    --margin-m: 1.5rem;
+    --margin-b: 1rem;
+
+    --white-color: #FFFFFF;
+    --gray-background: #F6f6f6;
+    --gray-text-color: #23272A;
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) 140px;
+    grid-template-areas:
+    "header"
+    "section-01"
+    "section-02"
+    "section-03"
+    "section-04"
+    "footer";
+
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--white-color);
+    color: var(--gray-text-color);
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+section-01 {
+    grid-area: section-01;
+}
+
+section-02 {
+    grid-area: section-02;
+}
+
+section-03 {
+    grid-area: section-03;
+}
+
+section-04 {
+    grid-area: section-04;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.section-01,
+.section-02,
+.section-03,
+.section-04 {
+    padding: var(--padding-xl) var(--padding-m);
+    margin: 0 auto;
+}
+
+.section-01-container,
+.section-02-container,
+.section-03-container,
+.section-04-container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.section-02,
+.section-04 {
+    background-color: var(--gray-background);
+}
+
+.subtitle {
+    font-family: var(--font-secondary-title);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-m);
+}
+
+.title {
+    font-family: var(--font-main-title);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-regular);
+}
+
+

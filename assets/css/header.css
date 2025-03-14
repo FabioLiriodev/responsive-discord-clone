@@ -1,0 +1,60 @@
+:root {
+    font-size: 16px;
+}
+
+header {
+    background-image: url(../img/Header-desktop-background.png);
+    background-position: center bottom;
+}
+
+.header-container {
+    margin: 70px auto;
+    padding: 0 23px 0 var(--padding-m);
+}
+
+.header-text {
+    margin-bottom: var(--margin-m);
+}
+
+
+.header-text h1 {
+    font-size: var(--font-size-l);
+    font-family: var(--font-main-title);
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+    margin-bottom: var(--margin-m);
+}
+
+.header-text p {
+    font-family: var(--font-text);
+    font-size: var(--font-size-b);
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-b);
+}
+
+.button-download,
+.button-desktop {
+    padding: var(--padding-b) 0;
+    text-align: center;
+    width: 381px;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+.button-download {
+    background-color: var(--white-color);
+    color: var(--gray-text-color);
+}
+
+.button-desktop {
+    background-color: var(--gray-text-color);
+    color: var(--white-color);
+}
