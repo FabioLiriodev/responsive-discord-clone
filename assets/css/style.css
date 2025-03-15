@@ -58,6 +58,12 @@ body {
     background-color: var(--white-color);
     color: var(--gray-text-color);
     height: 100vh;
+
+    @media screen and (min-width: 1280px) {
+        body {
+            grid-template-rows: repeat(4, 1fr) 1.7fr 134px;
+        }
+    }
 }
 
 header {
@@ -84,6 +90,7 @@ footer {
     grid-area: footer;
 }
 
+
 .section-01,
 .section-02,
 .section-03,
@@ -92,30 +99,136 @@ footer {
     margin: 0 auto;
 }
 
-.section-01-container,
-.section-02-container,
-.section-03-container,
-.section-04-container {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-}
-
 .section-02,
 .section-04 {
     background-color: var(--gray-background);
 }
 
+.section-01-container,
+.section-01-text,
+.section-02-container,
+.section-02-text,
+.section-03-container,
+.section-03-text,
+.section-04-container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    
+}
+
+
+.section-01-container,
+.section-03-container {
+
+    @media screen and (min-width: 1279px) {
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.section-01-container {
+
+    @media screen and (min-width: 1279px) {
+        align-items: flex-start;
+    }
+}
+
+.section-01-text h2 {
+
+    @media screen and (min-width: 1279px)  {
+        width: 329px;
+    }
+}
+
+.section-01-text {
+
+    @media screen and (min-width: 1279px)  {
+        width: 348px;
+    }
+}
+
+.section-02-container {
+
+    @media screen and (min-width: 1279px) {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+.section-02-text,
+.section-03-text {
+
+    @media screen and (min-width: 1279px)  {
+        width: 351px;
+    }
+}
+
+.section-03-container {
+    @media screen and (min-width: 1279px) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.section-04-container {
+
+    @media screen and (min-width: 1279px) {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+
+.section-04-container p {
+
+    @media screen and (min-width: 1279px) {
+        text-align: center;
+        width: 802px;
+    }
+}
+
+
 .subtitle {
     font-family: var(--font-secondary-title);
     font-weight: var(--font-weight-extra-bold);
     font-size: var(--font-size-m);
+
+    @media screen and (min-width: 1279px) {
+        font-size: var(--font-size-xl);
+    }
 }
 
 .title {
     font-family: var(--font-main-title);
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-regular);
+
+    @media screen and (min-width: 1279px) {
+        font-size: var(--font-size-xl);
+        text-align: center;
+    }
 }
+
+.section-01-text h2 br,
+.section-02-text h2 br,
+.section-03-text p br {
+
+    @media screen and (min-width: 1279px) {
+        display: none;
+    }
+}
+
+.section-04 h2 br {
+
+    @media screen and (min-width: 1279px) {
+        display: block;
+    }
+}
+
 
 

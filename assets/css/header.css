@@ -4,16 +4,31 @@
 
 header {
     background-image: url(../img/Header-desktop-background.png);
-    background-position: center bottom;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .header-container {
     margin: 70px auto;
     padding: 0 23px 0 var(--padding-m);
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 94px auto;
+        padding: 0;
+        
+    }
 }
 
 .header-text {
     margin-bottom: var(--margin-m);
+    
 }
 
 
@@ -23,6 +38,10 @@ header {
     font-weight: var(--font-weight-regular);
     color: var(--white-color);
     margin-bottom: var(--margin-m);
+
+    @media screen and (min-width: 1280px) {
+        font-size: var(--font-size-2xl);        
+    }
 }
 
 .header-text p {
@@ -31,6 +50,10 @@ header {
     font-weight: var(--font-weight-regular);
     color: var(--white-color);
 
+    @media screen and (min-width: 1280px) {
+        width: 757px;
+    }
+
 }
 
 .header-buttons {
@@ -38,6 +61,11 @@ header {
     align-items: center;
     flex-direction: column;
     gap: var(--gap-b);
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .button-download,
@@ -47,11 +75,19 @@ header {
     width: 381px;
     border-radius: 28px;
     text-decoration: none;
+
+    @media screen and (min-width: 1280px) {
+        padding: 11px 0;
+    }
 }
 
 .button-download {
     background-color: var(--white-color);
     color: var(--gray-text-color);
+
+    @media screen and (min-width: 1280px) {
+        width: 205px;
+    }
 }
 
 .button-desktop {
